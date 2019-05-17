@@ -53,28 +53,38 @@
             this.lblLibresTotal = new System.Windows.Forms.Label();
             this.lblRegularesTotal = new System.Windows.Forms.Label();
             this.lblPromocionadosTotal = new System.Windows.Forms.Label();
+            this.lblPorLib = new System.Windows.Forms.Label();
+            this.lblPorReg = new System.Windows.Forms.Label();
+            this.lblPorPro = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // boxNota1
             // 
             this.boxNota1.Location = new System.Drawing.Point(152, 93);
+            this.boxNota1.MaxLength = 2;
             this.boxNota1.Name = "boxNota1";
             this.boxNota1.Size = new System.Drawing.Size(100, 20);
             this.boxNota1.TabIndex = 2;
+            this.boxNota1.TextChanged += new System.EventHandler(this.boxNota1_TextChanged);
+            this.boxNota1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxNota1_KeyPress);
             // 
             // boxNota2
             // 
             this.boxNota2.Location = new System.Drawing.Point(152, 134);
+            this.boxNota2.MaxLength = 2;
             this.boxNota2.Name = "boxNota2";
             this.boxNota2.Size = new System.Drawing.Size(100, 20);
             this.boxNota2.TabIndex = 3;
+            this.boxNota2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxNota2_KeyPress);
             // 
             // boxNota3
             // 
             this.boxNota3.Location = new System.Drawing.Point(152, 175);
+            this.boxNota3.MaxLength = 2;
             this.boxNota3.Name = "boxNota3";
             this.boxNota3.Size = new System.Drawing.Size(100, 20);
             this.boxNota3.TabIndex = 4;
+            this.boxNota3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxNota3_KeyPress);
             // 
             // txtNota1
             // 
@@ -187,6 +197,8 @@
             this.boxNombre.Name = "boxNombre";
             this.boxNombre.Size = new System.Drawing.Size(100, 20);
             this.boxNombre.TabIndex = 1;
+            this.boxNombre.TextChanged += new System.EventHandler(this.boxNombre_TextChanged);
+            this.boxNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxNombre_KeyPress);
             // 
             // boxLegajo
             // 
@@ -194,6 +206,7 @@
             this.boxLegajo.Name = "boxLegajo";
             this.boxLegajo.Size = new System.Drawing.Size(100, 20);
             this.boxLegajo.TabIndex = 0;
+            this.boxLegajo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxLegajo_KeyPress);
             // 
             // btnBuscar
             // 
@@ -236,6 +249,7 @@
             this.lblProCurso.Size = new System.Drawing.Size(169, 25);
             this.lblProCurso.TabIndex = 16;
             this.lblProCurso.Text = "Promedio General";
+            this.lblProCurso.Click += new System.EventHandler(this.lblProCurso_Click);
             // 
             // lblLibres
             // 
@@ -303,12 +317,48 @@
             this.lblPromocionadosTotal.TabIndex = 22;
             this.lblPromocionadosTotal.Text = "cantidad";
             // 
+            // lblPorLib
+            // 
+            this.lblPorLib.AutoSize = true;
+            this.lblPorLib.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorLib.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPorLib.Location = new System.Drawing.Point(309, 438);
+            this.lblPorLib.Name = "lblPorLib";
+            this.lblPorLib.Size = new System.Drawing.Size(59, 25);
+            this.lblPorLib.TabIndex = 23;
+            this.lblPorLib.Text = "None";
+            // 
+            // lblPorReg
+            // 
+            this.lblPorReg.AutoSize = true;
+            this.lblPorReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorReg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPorReg.Location = new System.Drawing.Point(309, 473);
+            this.lblPorReg.Name = "lblPorReg";
+            this.lblPorReg.Size = new System.Drawing.Size(59, 25);
+            this.lblPorReg.TabIndex = 24;
+            this.lblPorReg.Text = "None";
+            // 
+            // lblPorPro
+            // 
+            this.lblPorPro.AutoSize = true;
+            this.lblPorPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorPro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblPorPro.Location = new System.Drawing.Point(309, 508);
+            this.lblPorPro.Name = "lblPorPro";
+            this.lblPorPro.Size = new System.Drawing.Size(59, 25);
+            this.lblPorPro.TabIndex = 25;
+            this.lblPorPro.Text = "None";
+            // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(303, 552);
+            this.ClientSize = new System.Drawing.Size(433, 552);
+            this.Controls.Add(this.lblPorPro);
+            this.Controls.Add(this.lblPorReg);
+            this.Controls.Add(this.lblPorLib);
             this.Controls.Add(this.lblPromocionadosTotal);
             this.Controls.Add(this.lblRegularesTotal);
             this.Controls.Add(this.lblLibresTotal);
@@ -368,6 +418,9 @@
         private System.Windows.Forms.Label lblLibresTotal;
         private System.Windows.Forms.Label lblRegularesTotal;
         private System.Windows.Forms.Label lblPromocionadosTotal;
+        private System.Windows.Forms.Label lblPorLib;
+        private System.Windows.Forms.Label lblPorReg;
+        private System.Windows.Forms.Label lblPorPro;
     }
 }
 
