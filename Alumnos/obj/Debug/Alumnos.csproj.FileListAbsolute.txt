@@ -26,3 +26,17 @@ C:\Users\Alumno\Desktop\Alumnos\Alumnos\Alumnos\obj\Debug\Alumnos.exe.manifest
 C:\Users\Alumno\Desktop\Alumnos\Alumnos\Alumnos\obj\Debug\Alumnos.application
 C:\Users\Alumno\Desktop\Alumnos\Alumnos\Alumnos\obj\Debug\Alumnos.exe
 C:\Users\Alumno\Desktop\Alumnos\Alumnos\Alumnos\obj\Debug\Alumnos.pdb
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\bin\Debug\Alumnos.exe.config
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\bin\Debug\Alumnos.exe.manifest
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\bin\Debug\Alumnos.application
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\bin\Debug\Alumnos.exe
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\bin\Debug\Alumnos.pdb
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.csprojAssemblyReference.cache
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.frmAlumnos.resources
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.Properties.Resources.resources
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.csproj.GenerateResource.cache
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.csproj.CoreCompileInputs.cache
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.exe.manifest
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.application
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.exe
+C:\Users\alumno\Documents\GitHub\alumnosutn\Alumnos\obj\Debug\Alumnos.pdb

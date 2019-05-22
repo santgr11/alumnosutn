@@ -56,6 +56,9 @@
             this.lblPorLib = new System.Windows.Forms.Label();
             this.lblPorReg = new System.Windows.Forms.Label();
             this.lblPorPro = new System.Windows.Forms.Label();
+            this.lblMpNombre = new System.Windows.Forms.Label();
+            this.lblMayorP = new System.Windows.Forms.Label();
+            this.lblMpNota = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // boxNota1
@@ -239,12 +242,13 @@
             this.lblProGeneral.Size = new System.Drawing.Size(59, 25);
             this.lblProGeneral.TabIndex = 15;
             this.lblProGeneral.Text = "None";
+            this.lblProGeneral.Click += new System.EventHandler(this.lblProGeneral_Click);
             // 
             // lblProCurso
             // 
             this.lblProCurso.AutoSize = true;
             this.lblProCurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProCurso.Location = new System.Drawing.Point(12, 403);
+            this.lblProCurso.Location = new System.Drawing.Point(16, 403);
             this.lblProCurso.Name = "lblProCurso";
             this.lblProCurso.Size = new System.Drawing.Size(169, 25);
             this.lblProCurso.TabIndex = 16;
@@ -256,7 +260,7 @@
             this.lblLibres.AutoSize = true;
             this.lblLibres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLibres.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblLibres.Location = new System.Drawing.Point(12, 438);
+            this.lblLibres.Location = new System.Drawing.Point(16, 442);
             this.lblLibres.Name = "lblLibres";
             this.lblLibres.Size = new System.Drawing.Size(65, 25);
             this.lblLibres.TabIndex = 17;
@@ -267,7 +271,7 @@
             this.lblRegulares.AutoSize = true;
             this.lblRegulares.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegulares.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblRegulares.Location = new System.Drawing.Point(12, 473);
+            this.lblRegulares.Location = new System.Drawing.Point(16, 481);
             this.lblRegulares.Name = "lblRegulares";
             this.lblRegulares.Size = new System.Drawing.Size(100, 25);
             this.lblRegulares.TabIndex = 18;
@@ -278,7 +282,7 @@
             this.lblPromocionados.AutoSize = true;
             this.lblPromocionados.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPromocionados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPromocionados.Location = new System.Drawing.Point(12, 508);
+            this.lblPromocionados.Location = new System.Drawing.Point(16, 520);
             this.lblPromocionados.Name = "lblPromocionados";
             this.lblPromocionados.Size = new System.Drawing.Size(148, 25);
             this.lblPromocionados.TabIndex = 19;
@@ -289,33 +293,36 @@
             this.lblLibresTotal.AutoSize = true;
             this.lblLibresTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLibresTotal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblLibresTotal.Location = new System.Drawing.Point(200, 438);
+            this.lblLibresTotal.Location = new System.Drawing.Point(200, 442);
             this.lblLibresTotal.Name = "lblLibresTotal";
             this.lblLibresTotal.Size = new System.Drawing.Size(86, 25);
             this.lblLibresTotal.TabIndex = 20;
             this.lblLibresTotal.Text = "cantidad";
+            this.lblLibresTotal.Click += new System.EventHandler(this.lblLibresTotal_Click);
             // 
             // lblRegularesTotal
             // 
             this.lblRegularesTotal.AutoSize = true;
             this.lblRegularesTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRegularesTotal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblRegularesTotal.Location = new System.Drawing.Point(200, 473);
+            this.lblRegularesTotal.Location = new System.Drawing.Point(200, 481);
             this.lblRegularesTotal.Name = "lblRegularesTotal";
             this.lblRegularesTotal.Size = new System.Drawing.Size(86, 25);
             this.lblRegularesTotal.TabIndex = 21;
             this.lblRegularesTotal.Text = "cantidad";
+            this.lblRegularesTotal.Click += new System.EventHandler(this.lblRegularesTotal_Click);
             // 
             // lblPromocionadosTotal
             // 
             this.lblPromocionadosTotal.AutoSize = true;
             this.lblPromocionadosTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPromocionadosTotal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPromocionadosTotal.Location = new System.Drawing.Point(200, 508);
+            this.lblPromocionadosTotal.Location = new System.Drawing.Point(200, 520);
             this.lblPromocionadosTotal.Name = "lblPromocionadosTotal";
             this.lblPromocionadosTotal.Size = new System.Drawing.Size(86, 25);
             this.lblPromocionadosTotal.TabIndex = 22;
             this.lblPromocionadosTotal.Text = "cantidad";
+            this.lblPromocionadosTotal.Click += new System.EventHandler(this.lblPromocionadosTotal_Click);
             // 
             // lblPorLib
             // 
@@ -333,7 +340,7 @@
             this.lblPorReg.AutoSize = true;
             this.lblPorReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorReg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPorReg.Location = new System.Drawing.Point(309, 473);
+            this.lblPorReg.Location = new System.Drawing.Point(309, 478);
             this.lblPorReg.Name = "lblPorReg";
             this.lblPorReg.Size = new System.Drawing.Size(59, 25);
             this.lblPorReg.TabIndex = 24;
@@ -344,18 +351,55 @@
             this.lblPorPro.AutoSize = true;
             this.lblPorPro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorPro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblPorPro.Location = new System.Drawing.Point(309, 508);
+            this.lblPorPro.Location = new System.Drawing.Point(309, 518);
             this.lblPorPro.Name = "lblPorPro";
             this.lblPorPro.Size = new System.Drawing.Size(59, 25);
             this.lblPorPro.TabIndex = 25;
             this.lblPorPro.Text = "None";
+            // 
+            // lblMpNombre
+            // 
+            this.lblMpNombre.AutoSize = true;
+            this.lblMpNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMpNombre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMpNombre.Location = new System.Drawing.Point(200, 559);
+            this.lblMpNombre.Name = "lblMpNombre";
+            this.lblMpNombre.Size = new System.Drawing.Size(59, 25);
+            this.lblMpNombre.TabIndex = 26;
+            this.lblMpNombre.Text = "None";
+            this.lblMpNombre.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lblMayorP
+            // 
+            this.lblMayorP.AutoSize = true;
+            this.lblMayorP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMayorP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMayorP.Location = new System.Drawing.Point(16, 559);
+            this.lblMayorP.Name = "lblMayorP";
+            this.lblMayorP.Size = new System.Drawing.Size(155, 25);
+            this.lblMayorP.TabIndex = 27;
+            this.lblMayorP.Text = "Mayor Promedio";
+            // 
+            // lblMpNota
+            // 
+            this.lblMpNota.AutoSize = true;
+            this.lblMpNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMpNota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMpNota.Location = new System.Drawing.Point(309, 558);
+            this.lblMpNota.Name = "lblMpNota";
+            this.lblMpNota.Size = new System.Drawing.Size(59, 25);
+            this.lblMpNota.TabIndex = 28;
+            this.lblMpNota.Text = "None";
             // 
             // frmAlumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(433, 552);
+            this.ClientSize = new System.Drawing.Size(434, 609);
+            this.Controls.Add(this.lblMpNota);
+            this.Controls.Add(this.lblMayorP);
+            this.Controls.Add(this.lblMpNombre);
             this.Controls.Add(this.lblPorPro);
             this.Controls.Add(this.lblPorReg);
             this.Controls.Add(this.lblPorLib);
@@ -386,6 +430,7 @@
             this.Controls.Add(this.boxNota1);
             this.Name = "frmAlumnos";
             this.Text = "1";
+            this.Load += new System.EventHandler(this.frmAlumnos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,6 +466,9 @@
         private System.Windows.Forms.Label lblPorLib;
         private System.Windows.Forms.Label lblPorReg;
         private System.Windows.Forms.Label lblPorPro;
+        private System.Windows.Forms.Label lblMpNombre;
+        private System.Windows.Forms.Label lblMayorP;
+        private System.Windows.Forms.Label lblMpNota;
     }
 }
 

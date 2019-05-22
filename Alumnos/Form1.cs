@@ -65,6 +65,11 @@ namespace Alumnos {
                 lblPorReg.Text = Math.Round(((double)ctreg / alumnos.Values.Count()) * 100, 2).ToString();
                 lblPorPro.Text = Math.Round(((double)ctpro / alumnos.Values.Count()) * 100, 2).ToString();
             }
+
+            Alumno mp = this.maxPro();
+
+            lblMpNombre.Text = mp.Nombre;
+            lblMpNota.Text = mp.getPromedio().ToString();
         }
 
         public bool isBoxEmpty(TextBox tb) {
@@ -198,6 +203,52 @@ namespace Alumnos {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.')) {
                 e.Handled = true;
             }
+        }
+
+        private void frmAlumnos_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRegularesTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblPromocionadosTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblLibresTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProGeneral_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private Alumno maxPro() {
+
+            Alumno candidato = new Alumno("", 0, 0, 0, -1);
+
+            foreach(Alumno alum in this.alumnos.Values) {
+            
+                if (alum.getPromedio() > candidato.getPromedio()) {
+                    candidato = alum;
+            }
+
+        }
+
+            return candidato;
+
         }
     }
 }
